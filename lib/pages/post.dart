@@ -13,7 +13,7 @@ class postCrypto extends StatefulWidget {
 
 class _postCryptoState extends State<postCrypto> {
   
-  final url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=pln";
+  final url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd";
   var _postsJson = [];
 
   void fetchPosts()async{
