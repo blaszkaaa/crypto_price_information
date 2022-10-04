@@ -11,7 +11,7 @@ class postCrypto extends StatefulWidget {
 
 class _postCryptoState extends State<postCrypto> {
   
-  final url = "https://api.cryptonator.com/api/ticker/btc-usd";
+  final url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd";
   var _postsJson = [];
 
   void fetchPosts()async{
@@ -40,7 +40,7 @@ class _postCryptoState extends State<postCrypto> {
           itemCount: _postsJson.length,
           itemBuilder: (context, i) {
             final post = _postsJson[i];
-            return Text("Title: ${post["error"]}\n Body: ${post["id"]}\n\n");
+            return Text("Title: ${post["id"]}\n Body: ${post["current_price"]}\n\n");
           }
         ),
       ),
