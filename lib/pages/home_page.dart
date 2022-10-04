@@ -12,6 +12,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
+  var _selectedIndex = 0;
+
+  final List<StatelessWidget> _pages = [
+    homeUser(),
+    favoriteUser(),
+    accountUser(),
+  ];
  
   @override
   Widget build(BuildContext context) {
