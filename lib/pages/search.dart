@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, camel_case_types
 
 import 'package:flutter/material.dart';
 class searchUser extends StatelessWidget {
@@ -11,7 +11,7 @@ class searchUser extends StatelessWidget {
       body: Column(
       // ignore: prefer_const_literals_to_create_immutables
       children: [
-        const SizedBox(height: 50,),
+        const SizedBox(height: 50),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: TextField(

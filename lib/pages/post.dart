@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, camel_case_types
 
 import 'dart:convert';
 import 'package:http/http.dart';
@@ -14,11 +14,14 @@ class postCrypto extends StatefulWidget {
 class _postCryptoState extends State<postCrypto> {
   
   final url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd";
+  
   var _postsJson = [];
 
   void fetchPosts()async{
     try{
+      
       final response = await get(Uri.parse(url));
+      
       final jsonData = jsonDecode(response.body) as List;
 
       setState(() {
@@ -80,12 +83,10 @@ class _postCryptoState extends State<postCrypto> {
                         Text("Price ${post["current_price"]} \$ ", 
                         style: TextStyle(
                           color: Colors.grey[500]
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ),],
                   ),
-                ],
+                ),],
               ),
             ),
           );}
