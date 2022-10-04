@@ -11,7 +11,6 @@ import 'package:http/http.dart';
 
 class Jobs extends StatefulWidget {
   Jobs() : super();
-
   @override
   JobsState createState() => JobsState();
 }
@@ -87,7 +86,6 @@ class JobsState extends State<Jobs> {
     fetchPosts();
   }
 
-  //Main Widget
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -131,6 +129,7 @@ class JobsState extends State<Jobs> {
                 ),
                 contentPadding: EdgeInsets.all(15.0),
                 hintText: 'Search ',
+                hintStyle: TextStyle(color: Colors.grey)
               ),
               onChanged: (string) {
                 _debouncer.run(() {
