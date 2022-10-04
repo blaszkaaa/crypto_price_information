@@ -1,9 +1,13 @@
 // ignore_for_file: prefer_const_constructors, camel_case_types, unused_import
+import 'dart:convert';
+
+import 'package:crypto_price_information/pages/post.dart';
 import 'package:http/http.dart';
 import 'package:flutter/material.dart';
 
 class homeUser extends StatelessWidget {
   const homeUser({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +21,7 @@ class homeUser extends StatelessWidget {
         ),
         backgroundColor: Color.fromARGB(255, 20, 22, 26),
       ),
-      body: Column(
-
-      ),
+      body: postCrypto()
     );
   }
 }
