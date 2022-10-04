@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
         color: Colors.grey[500],
       ),
       Icon(
-        Icons.favorite_border, 
+        Icons.search, 
         size: 25, 
         color: Colors.grey[500],
       ),
