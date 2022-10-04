@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, camel_case_types
+// ignore_for_file: prefer_const_constructors, camel_case_types, empty_catches
 
 import 'dart:convert';
 import 'package:http/http.dart';
@@ -32,6 +32,7 @@ class _postCryptoState extends State<postCrypto> {
 
   @override
   void initState() {
+    // ignore: todo
     // TODO: implement initState
     super.initState();
     fetchPosts();
