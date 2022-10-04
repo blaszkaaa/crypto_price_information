@@ -12,11 +12,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  var _selectedIndex = 0;
-  final List<StatelessWidget> _pages =[
-    
-  ];
-
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,11 +29,6 @@ class _HomePageState extends State<HomePage> {
         color: Colors.grey[500],
       ),
       Icon(
-        Icons.shopping_cart_outlined, 
-        size: 25, 
-        color: Colors.grey[500],
-      ),
-      Icon(
         Icons.favorite_border, 
         size: 25, 
         color: Colors.grey[500],
@@ -48,13 +39,9 @@ class _HomePageState extends State<HomePage> {
         color: Colors.grey[500],
       ),
     ],
-    onTap: (index) {
-      setState(() {
-      _selectedIndex = index;
-    });
-    },
+    onTap: null,
   ),
-    body: _pages[_selectedIndex],
+    body: Scaffold(),
     );
   }
 }
