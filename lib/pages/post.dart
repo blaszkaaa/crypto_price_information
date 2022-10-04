@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'dart:convert';
 import 'package:http/http.dart';
 import 'package:flutter/material.dart';
@@ -40,8 +42,39 @@ class _postCryptoState extends State<postCrypto> {
           itemCount: _postsJson.length,
           itemBuilder: (context, i) {
             final post = _postsJson[i];
-            return Text("Title: ${post["id"]}\n Body: ${post["current_price"]}\n\n");
-          }
+            return Padding(
+              padding: const EdgeInsets.only(left: 10, bottom: 25, right: 10),
+              child: Container(
+                padding: EdgeInsets.all(12),
+                width: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.black54,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                  //zdjęcie
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.network("${post["image"]}", width: 50,)
+                    ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                        "${post["name"]}",
+                        style: TextStyle(fontSize: 20),  
+                          ),
+                        SizedBox(height: 4,),
+                    ],
+                  ),
+                ),],
+              ),
+            ),
+          );}
         ),
       ),
     );
