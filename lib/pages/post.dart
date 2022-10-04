@@ -40,7 +40,7 @@ class _postCryptoState extends State<postCrypto> {
           itemCount: _postsJson.length,
           itemBuilder: (context, i) {
             final post = _postsJson[i];
-            return Text("Title: ${post["title"]}\n Body: ${post["body"]}\n\n");
+            return Text("Title: ${post["error"]}\n Body: ${post["id"]}\n\n");
           }
         ),
       ),
