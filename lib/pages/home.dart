@@ -4,10 +4,13 @@ class homeUser extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        
-      ],
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Crypto Price"),
+      ),
+      body: Column(
+
+      ),
     );
   }
 }
