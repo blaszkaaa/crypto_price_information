@@ -37,6 +37,7 @@ class _postCryptoState extends State<postCrypto> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Color.fromARGB(255, 11, 12, 14),
         body: ListView.builder(
