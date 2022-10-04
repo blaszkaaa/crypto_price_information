@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
-import 'package:crypto_price_information/pages/account.dart';
 import 'package:crypto_price_information/pages/search.dart';
 import 'package:crypto_price_information/pages/home.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
@@ -20,7 +19,6 @@ class _HomePageState extends State<HomePage> {
   final List<StatelessWidget> _pages = [
     homeUser(),
     searchUser(),
-    accountUser(),
   ];
  
   @override
@@ -28,6 +26,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
     bottomNavigationBar: CurvedNavigationBar(
     backgroundColor: Color.fromARGB(255, 11, 12, 14),
+    animationDuration: Duration(milliseconds: 500),
     buttonBackgroundColor: Color.fromARGB(255, 248, 204, 58),
     animationCurve: Curves.fastLinearToSlowEaseIn,
     height: 70,
@@ -40,11 +39,6 @@ class _HomePageState extends State<HomePage> {
       ),
       Icon(
         Icons.search, 
-        size: 25, 
-        color: Colors.grey[500],
-      ),
-      Icon(
-        Icons.account_circle_rounded, 
         size: 25, 
         color: Colors.grey[500],
       ),

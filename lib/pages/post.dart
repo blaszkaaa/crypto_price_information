@@ -13,7 +13,7 @@ class postCrypto extends StatefulWidget {
 
 class _postCryptoState extends State<postCrypto> {
   
-  final url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd";
+  final url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=pln";
   var _postsJson = [];
 
   void fetchPosts()async{
@@ -77,7 +77,7 @@ class _postCryptoState extends State<postCrypto> {
                           color: Colors.white,
                           ),  
                         ),
-                        Text("Price ${post["current_price"]} " + "\$", 
+                        Text("Price ${post["current_price"]} \$ ", 
                         style: TextStyle(
                           color: Colors.grey[500]
                           ),
@@ -86,9 +86,6 @@ class _postCryptoState extends State<postCrypto> {
                     ),
                   ),
                 ],
-
-
-
               ),
             ),
           );}
