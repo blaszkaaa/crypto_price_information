@@ -8,7 +8,8 @@ class homeUser extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Crypto Price")),
+        centerTitle: true,
+        title: Text("Crypto Price"),
         leading: Padding(
           padding: const EdgeInsets.only(left: 10),
           child: Image.asset("lib/img/zdj1.png"),
