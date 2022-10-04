@@ -6,7 +6,7 @@ class homeUser extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("home"),
+        
       ],
     );
   }
