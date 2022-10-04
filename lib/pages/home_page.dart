@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:crypto_price_information/pages/account.dart';
-import 'package:crypto_price_information/pages/favorite.dart';
+import 'package:crypto_price_information/pages/search.dart';
 import 'package:crypto_price_information/pages/home.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
 
   final List<StatelessWidget> _pages = [
     homeUser(),
-    favoriteUser(),
+    searchUser(),
     accountUser(),
   ];
  

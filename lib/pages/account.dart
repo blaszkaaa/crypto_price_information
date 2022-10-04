@@ -6,7 +6,9 @@ class accountUser extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text("account"),
+        Container(
+          
+        ),
       ],
     );
   }
