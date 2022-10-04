@@ -11,7 +11,7 @@ class postCrypto extends StatefulWidget {
 
 class _postCryptoState extends State<postCrypto> {
   
-  final url = "https://jsonplaceholder.typicode.com/posts";
+  final url = "https://api.cryptonator.com/api/ticker/btc-usd";
   var _postsJson = [];
 
   void fetchPosts()async{
